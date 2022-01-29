@@ -11,8 +11,8 @@ namespace hbt
         Rectangle(GraphicsObject* parent = nullptr, 
                   Vector2 position = {0, 0},
                   Vector2 size = {0, 0},
-                  Color backgroundColor = BLACK)
-            : GraphicsObject(parent, position, size, backgroundColor) {}
+                  Color color = BLACK)
+            : GraphicsObject(parent, position, size, color) {}
 
         virtual void draw() const override;
     };
