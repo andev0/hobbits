@@ -14,7 +14,7 @@ To build the project you need to install [Raylib](https://github.com/raysan5/ray
 
 ### Building with g++
 
-`g++ -lraylib src/** -o build/Hobbits` will build the project for you. Binary file will be stored in `build` directory. If you are on Windows then replace `build/Hobbits` with `build/Hobbits.exe`
+`g++ -lraylib -Isrc {SOURCE_FILES} -o build/Hobbits` (`{SOURCE_FILES}` should be replaced with .cpp files list inside src directory) will build the project for you. Binary file will be stored in `build` directory. If you are on Windows then replace `build/Hobbits` with `build/Hobbits.exe`
 
 ## Launching
 
