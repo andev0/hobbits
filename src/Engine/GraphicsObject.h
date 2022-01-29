@@ -12,19 +12,16 @@ namespace hbt
         GraphicsObject(GraphicsObject* parent = nullptr, 
                        Vector2 position = {0, 0},
                        Vector2 size = {0, 0},
-                       Color backgroundColor = BLACK)
-            : p_parent(parent)
-            , m_position(position)
-            , m_size(size)
-            , m_backgroundColor(backgroundColor) {}
+                       Color backgroundColor = BLACK);
 
         virtual void draw() const = 0;
 
+        Vector2 getAbsolutePosition() const { return m_absolutePosition; }
         Vector2 getPosition() const { return m_position; }
         Vector2 getSize() const { return m_size; }
         Color getBackgroundColor() const { return m_backgroundColor; }
 
-        void setPosition(Vector2 position) { m_position = position; }
+        void setPosition(Vector2 position);
         void setSize(Vector2 size) { m_size = size; }
         void setBackgroundColor(Color backgroundColor)
         {
@@ -34,6 +31,7 @@ namespace hbt
     protected:
         GraphicsObject* p_parent;
 
+        Vector2 m_absolutePosition;
         Vector2 m_position;
         Vector2 m_size;
 
