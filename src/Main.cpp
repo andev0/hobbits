@@ -1,4 +1,4 @@
-#include <raylib.h>
+#include "Engine/GraphicsObjects/Rectangle.h"
 
 int main()
 {
@@ -6,11 +6,15 @@ int main()
 
     InitWindow(screenSize.x, screenSize.y, "Hobbits");
 
+    hbt::Rectangle rect(nullptr, {0, 0}, screenSize, DARKGRAY);
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
 
-        {}
+        {
+            rect.draw();
+        }
 
         EndDrawing();
     }
