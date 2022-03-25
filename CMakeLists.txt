@@ -12,3 +12,6 @@ add_subdirectory(src/libs/engenie)
 add_executable(${PROJECT_NAME} src/Main.cpp)
 
 target_link_libraries(${PROJECT_NAME} Engenie)
+
+file (COPY ${PROJECT_SOURCE_DIR}/Resources 
+      DESTINATION ${CMAKE_BINARY_DIR})
