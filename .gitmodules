@@ -1,0 +1,3 @@
+[submodule "src/libs/engenie"]
+	path = src/libs/engenie
+	url = https://github.com/andev0/engenie

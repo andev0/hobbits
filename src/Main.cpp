@@ -1,5 +1,4 @@
-#include "Engine/GraphicsObjects/Rectangle.h"
-#include "Engine/GraphicsObjects/Text.h"
+#include "Engenie/Graphics.h"
 
 int main()
 {
@@ -8,7 +7,7 @@ int main()
     InitWindow(screenSize.x, screenSize.y, "Hobbits");
 
     hbt::Rectangle rect(nullptr, {0, 0}, screenSize, DARKGRAY);
-    hbt::Text text(&rect, {5, 5}, "Hello World!", 40.0f, RAYWHITE, "Resources/Fonts/Comfortaa/Regular.ttf");
+    hbt::Text text(&rect, {5, 5}, "Hello World!", 40.0f, RAYWHITE, "Resources/Fonts/Nunito/Regular.ttf");
 
     while (!WindowShouldClose())
     {
