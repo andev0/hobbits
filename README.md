@@ -3,18 +3,27 @@ Habits manager written in C++ using Raylib.
 
 - [Building](#Building)
   - [Dependencies](#Dependencies)
-  - [Building with g++](#Building-with-g++)
+  - [Cloning the repository](#Cloning-the-repository)
+  - [Building with CMake](#Building-with-CMake)
 - [Launching](#Launching)
 
 ## Building
 
 ### Dependencies
 
-To build the project you need to install [Raylib](https://github.com/raysan5/raylib) first.
+To build an engine for the project you need to install [Raylib](https://github.com/raysan5/raylib) first.
 
-### Building with g++
+### Cloning the repository
 
-`g++ -lraylib -Isrc {SOURCE_FILES} -o build/Hobbits` (`{SOURCE_FILES}` should be replaced with .cpp files list inside src directory) will build the project for you. Binary file will be stored in `build` directory. If you are on Windows then replace `build/Hobbits` with `build/Hobbits.exe`
+```
+git clone https://github.com/andev0/hobbits --recursive && cd hobbits
+```
+
+### Building with CMake
+
+```
+mkdir build && cd build && cmake .. && cmake --build .
+```
 
 ## Launching
 
