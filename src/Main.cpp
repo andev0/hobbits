@@ -10,7 +10,7 @@ int main()
     engenie::Text text(&rect, {5, 5}, "Hello World!", 40.0f, RAYWHITE,
                        "Resources/Fonts/Nunito/Regular.ttf");
 
-    while(!WindowShouldClose())
+    while (!WindowShouldClose())
     {
         BeginDrawing();
 
